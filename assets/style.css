@@ -1,16 +1,23 @@
 :root {
 	--base-size: 12px;
-	--gutter-size: calc(2 * var(var(--base-size));
+	--gutter-size: calc(3 * var(var(--base-size)));
 
 	--color--primary: black;
 	--color--secondary: gold;
-	--color--background: white;
+	--color--background: tomato;
 }
 
-body {
-	background-color: azure;
+header {
+	background-color: var(--color--background);
+	padding-block: calc(5 * var(--base-size));
 }
 
-p {
-	color: tomato;
+footer {
+	padding-block-start: var(--base-size);
+	padding-bottom: calc(5 * var(--base-size));
+	background-color: var(--color--secondary);
+}
+
+.gutters {
+	padding-inline: var(--gutter-size);
 }

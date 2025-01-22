@@ -22,7 +22,7 @@ header {
 }
 
 section {
-	block-size: 75vh;
+	block-size: 60vh;
 	padding-block: 20px;
 }
 
@@ -34,6 +34,12 @@ footer {
 	background-color: var(--color--secondary);
 }
 
+li {
+	list-style-type: circle;
+	padding-block: calc(2 * var(--base-size));
+
+}
+
 .gutters {
-	padding-inline: var(--gutter-size);
+	padding-inline: calc(3 * var(--gutter-size));
 }

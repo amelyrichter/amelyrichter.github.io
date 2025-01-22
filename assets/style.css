@@ -6,7 +6,12 @@ body {
 	--color--secondary: gold;
 	--color--background: tomato;
 
+	--font-family-01: "Space Grotesk", serif;
+						font-optical-sizing: auto;
+						font-style: normal;
+
 	font-size: var(--base-size);
+	font-family: var(--font-family-01);
 }
 
 @media screen and (min-width: 600px) {
@@ -38,6 +43,10 @@ li {
 	list-style-type: circle;
 	padding-block: calc(2 * var(--base-size));
 
+}
+
+h1 {
+	font-size: calc(2 * var(--base-size));
 }
 
 .gutters {

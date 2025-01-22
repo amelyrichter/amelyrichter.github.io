@@ -1,10 +1,12 @@
-:root {
-	--base-size: 12px;
-	--gutter-size: calc(3 * var(var(--base-size)));
+body {
+	--base-size: 20px;
+	--gutter-size: calc(3 * var(--base-size));
 
 	--color--primary: black;
 	--color--secondary: gold;
 	--color--background: tomato;
+
+	font-size: var(--base-size);
 }
 
 header {
@@ -12,7 +14,14 @@ header {
 	padding-block: calc(5 * var(--base-size));
 }
 
+section {
+	block-size: 75vh;
+	padding-block: 20px;
+}
+
 footer {
+	--base-size: 48px;
+
 	padding-block-start: var(--base-size);
 	padding-bottom: calc(5 * var(--base-size));
 	background-color: var(--color--secondary);

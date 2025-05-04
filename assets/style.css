@@ -82,8 +82,8 @@
   
   .sticky-projects li {
 	flex: 1;
-	min-width: 120px;
-	max-width: 200px;
+	/* min-width: 120px;
+	max-width: 200px; */
 	background-color: #fefefe;
 	border-radius: 8px;
 	padding: 1rem;
@@ -129,18 +129,20 @@
 
 @media (max-width: 600px) {
 	.sticky-projects {
-	  padding: 1rem 1.5rem;
+	  padding: 1rem 1rem;
 	}
   
 	.sticky-projects ul {
+	  display: flex;
 	  flex-wrap: wrap;
 	  gap: 0.75rem;
 	  justify-content: center;
 	}
   
 	.sticky-projects li {
-	  flex: 1 1 45%;
-	  max-width: none;
+	  /* flex: 1 1 45%; */
+	  /* max-width: 48%; */
+	  min-width: none;
 	  padding: 0.5rem;
 	  font-size: 0.75rem;
 	}

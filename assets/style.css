@@ -6,7 +6,7 @@
   
   body {
 	font-family: "Readex Pro", sans-serif;
-	background: #f4f4f4;
+	/* background: #f4f4f4; */
 	color: black;
 	overflow-x: hidden;
   }
@@ -15,6 +15,16 @@
 	padding: 2rem 3rem;
 	text-align: center;
 	font-weight: 300;
+	cursor: pointer;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+	position: sticky;
+	bottom: 0;
+	background-color: white;
+	padding: 1.5rem 3rem;
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+	z-index: 10;
   }
 
   .hero {
@@ -42,8 +52,8 @@
   
   .bg-gif {
 	position: absolute;
-	width: 200px;
-	height:100px;
+	width: 400px;
+	height:200px;
 	background-image: url('/assets/projects.gif');
 	background-size: cover;
 	background-position: center;
@@ -91,20 +101,20 @@
 	font-weight: 300;
   }
   
-  .sticky-projects em {
+  .sticky-projects em, .intro em {
 	font-style: italic;
 	display: block;
 	margin-top: 0.3rem;
   }
-  
-/* 
 
-  @media (max-width: 601px) 
+
+
+  @media (max-width: 500px) {
 
   .bg-gif {
 	position: absolute;
-	width: 400px;
-	height:200px;
+	width: 120px;
+	height:70px;
 	background-image: url('/assets/projects.gif');
 	background-size: cover;
 	background-position: center;
@@ -112,4 +122,4 @@
 	pointer-events: none;
   }
 
-} */
+}

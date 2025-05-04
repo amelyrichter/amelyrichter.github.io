@@ -33,6 +33,8 @@ body {
 header {
 	background-color: var(--color--background);
 	padding-block: calc(2 * var(--base-size));
+	text-align: center; 
+	padding-inline: calc(3 * var(--gutter-size));
 }
 
 section {
@@ -120,7 +122,8 @@ p {
 	left: 0;
 	right: 0;
 	background-color: var(--color--background);
-	padding: var(--base-size) calc(3 * var(--gutter-size));
+	padding-inline: calc(3 * var(--gutter-size));
+	padding-block: var(--base-size);
 	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
 	z-index: 999;
 }
@@ -129,7 +132,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap; 
-	width: 100vw;
+	/* width: 100vw; */
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -146,6 +149,12 @@ p {
 	border-radius: 8px;
 	gap: 5px;
 }
+
+.intro {
+	padding: 2rem 3rem;
+	text-align: center;
+	font-weight: 300;
+  }
 
 
 /* .gutters {

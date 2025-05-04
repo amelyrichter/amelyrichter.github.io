@@ -126,3 +126,32 @@
   }
 
 }
+
+@media (max-width: 600px) {
+	.sticky-projects {
+	  padding: 1rem 1.5rem;
+	}
+  
+	.sticky-projects ul {
+	  flex-wrap: wrap;
+	  gap: 0.75rem;
+	  justify-content: center;
+	}
+  
+	.sticky-projects li {
+	  flex: 1 1 45%;
+	  max-width: none;
+	  padding: 0.5rem;
+	  font-size: 0.75rem;
+	}
+  
+	.sticky-projects p {
+	  font-size: 0.8rem;
+	  line-height: 1.2;
+	}
+  
+	.sticky-projects em {
+	  font-style: italic;
+	  font-size: 0.7rem;
+	}
+  }

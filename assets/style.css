@@ -16,6 +16,11 @@ body {
 	padding-bottom: calc(8 * var(--base-size));
 	margin: 0;
 	overflow-x: hidden;
+	margin: 0;
+	height: 100vh; 
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -27,7 +32,7 @@ body {
 
 header {
 	background-color: var(--color--background);
-	padding-block: calc(5 * var(--base-size));
+	padding-block: calc(2 * var(--base-size));
 }
 
 section {
@@ -50,9 +55,29 @@ li {
 }
 
 h1 {
-	font-size: calc(2 * var(--base-size));
-	color: #332de5;
+	/* font-size: calc(6 * var(--base-size)); */
+	min-width: 100vw;
+	color: black;
+	/* font-family: "Tilt Warp", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"XROT" 0,
+		"YROT" 0; */
+		font-family: "Syncopate", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
 	/* color: #f5280d; */
+	font-size: 10vw; 
+	white-space: nowrap; 
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100vw;
+	overflow: hidden;
 }
 
 body > section > p:nth-child(1) {
@@ -74,6 +99,19 @@ div {
 
 ul {
 	max-width: 90vw;
+}
+
+p {
+	font-family: "Readex Pro", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-variation-settings:
+	  "HEXP" 0;
+	max-width: 80%;
+	text-align: center;
+	align-items: center;
+	display: block;
 }
 
 .sticky-projects {

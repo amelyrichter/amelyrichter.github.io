@@ -156,4 +156,17 @@
 	  font-style: italic;
 	  font-size: 0.7rem;
 	}
+
+	.hero {
+		position: relative;
+		height: 50vh;
+		width: 100%;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		z-index: 1;
+	  }
+
   }
